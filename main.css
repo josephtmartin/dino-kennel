@@ -1,3 +1,12 @@
 body {
     background-color: #fff6f4;
 }
+.kennel-container {
+    background-color: white;
+}
+.hospital-container {
+    background-color: red;
+}
+.graveyard-container {
+    background-color: grey;
+}
