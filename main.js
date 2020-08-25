@@ -1,4 +1,4 @@
-import { printDinoCards } from './javascripts/components/makeDino.js';
+import { printDinoCards } from './javascripts/components/printDino.js';
 
 const dinos = [
   {
@@ -149,12 +149,6 @@ const adventures = [
     healthHit: 60,
   },
 ];
-
-const kennelArr = [];
-
-const hospitalArr = [];
-
-const graveyardArr = [];
 
 const init = () => {
   printDinoCards(dinos);
