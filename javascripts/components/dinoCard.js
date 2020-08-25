@@ -1,5 +1,5 @@
 const makeDino = (item, index) => {
-  let domString = `<div class="card" style="width: 18rem;">
+  return `<div class="card" style="width: 18rem;">
     <img class="card-img-top" src="${item.imageUrl}" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title">${item.name}</h5>
@@ -12,7 +12,6 @@ const makeDino = (item, index) => {
         <button class="btn btn-danger" id="delete-${index}">Delete</button>
     </div>
 </div>`;
-  return domString;
 };
 
 export { makeDino };
