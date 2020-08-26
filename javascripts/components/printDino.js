@@ -1,5 +1,7 @@
 import { makeDino } from './dinoCard.js';
-import { feedPetDino } from './feedPet.js'
+import { feedDino } from './feedDino.js';
+import { petDino } from './petDino.js';
+import { deleteDino } from './deleteDino.js';
 
 const printDinoCards = (array) => {
   emptyDom();
@@ -11,7 +13,9 @@ const printDinoCards = (array) => {
     } else if (item.health === 0) {
       $('#graveyardCards').append(makeDino(item, index));
     }
-    feedPetDino(index, item, array);
+    feedDino(index, item, array)
+    petDino(index, item, array)
+    deleteDino(array, index)
   });
 };
 

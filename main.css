@@ -3,10 +3,32 @@ body {
 }
 .kennel-container {
     background-color: white;
+    margin: 10px;
 }
 .hospital-container {
     background-color: red;
+    margin: 10px;
 }
 .graveyard-container {
     background-color: grey;
+    margin: 10px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.kennel-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.hospital-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.graveyard-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
