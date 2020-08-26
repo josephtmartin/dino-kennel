@@ -8,6 +8,7 @@ const makeDino = (item, index) => {
         </div>
         <button class="btn btn-success m-2" id="feed-${index}">Feed</button>
         <button class="btn btn-success m-2" id="pet-${index}">Pet</button>
+        <button class="btn btn-warning m-2" id="adventure-${index}">Adventure</button>
         <button class="btn btn-info m-2" id="info-${index}">Info</button>
         <button class="btn btn-danger m-2" id="delete-${index}">Delete</button>
     </div>
