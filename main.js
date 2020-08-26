@@ -96,6 +96,9 @@ const dinos = [
       'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOdrC7hlvBawFQ7g8vgwHcfQphX5WfeN2bth0dvc4M2oxNGdSD',
   },
 ];
+const getDinos = () => {
+  return dinos;
+};
 
 const adventures = [
   {
@@ -155,3 +158,5 @@ const init = () => {
 };
 
 init();
+
+export { getDinos };

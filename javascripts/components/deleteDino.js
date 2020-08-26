@@ -1,4 +1,4 @@
-import { printDinoCards } from './printDino.js'
+import { printDinoCards } from './printDino.js';
 
 const deleteDino = (array, index) => {
     $(`#delete-${index}`).click( () => {
