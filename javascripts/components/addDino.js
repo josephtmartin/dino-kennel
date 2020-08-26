@@ -43,7 +43,7 @@ const submitDinoForm = () => {
       owner: $('#inputOwner').val(),
       adventures: [],
       health: 100,
-      image: $('#inputImg').val(),
+      imageUrl: $('#inputImg').val(),
     };
     getDinos().push(newDino);
     printDinoCards(getDinos())
