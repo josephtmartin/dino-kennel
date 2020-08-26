@@ -2,6 +2,7 @@ import { makeDino } from './dinoCard.js';
 import { feedDino } from './feedDino.js';
 import { petDino } from './petDino.js';
 import { deleteDino } from './deleteDino.js';
+import { dinoForm } from './addDino.js';
 
 const printDinoCards = (array) => {
   emptyDom();
@@ -16,6 +17,7 @@ const printDinoCards = (array) => {
     feedDino(index, item, array)
     petDino(index, item, array)
     deleteDino(array, index)
+    dinoForm();
   });
 };
 
