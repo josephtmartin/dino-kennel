@@ -3,14 +3,17 @@ const makeDino = (item, index) => {
     <img class="card-img-top" src="${item.imageUrl}" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title">${item.name}</h5>
+        <p class="mb-0">Health Bar:</p>
         <div class="progress">
             <div class="progress-bar" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <button class="btn btn-success m-2" id="feed${index}">Feed</button>
-        <button class="btn btn-success m-2" id="pet${index}">Pet</button>
-        <button class="btn btn-warning m-2" id="adventure${index}">Adventure</button>
-        <button class="btn btn-info m-2" id="info${index}" data-toggle="modal" data-target="#modal${index}">Info</button>
-        <button class="btn btn-danger m-2" id="delete${index}">Delete</button>
+        <button class="btn btn-success m-1" id="feed${index}">Feed</button>
+        <button class="btn btn-success m-1" id="pet${index}">Pet</button>
+        <button class="btn btn-warning m-1" style="color: white" id="adventure${index}">Adventure</button>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-info m-1" id="info${index}" data-toggle="modal" data-target="#modal${index}">Info</button>
+            <button class="btn btn-danger m-1" id="delete${index}">Delete</button>
+        </div>
     </div>
 </div>
 
@@ -23,14 +26,16 @@ const makeDino = (item, index) => {
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <img src="${item.imageUrl}">
-                <h2>${item.name}</h2>
-                <h4>${item.type}</h4>
-                <h4>${item.age}</h4>
-                <h4>${item.owner}</h4>
-            <div class="progress">
-                <div class="progress-bar" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="modal-body d-flex">
+                <img class="modal-image" style="width: 50%" src="${item.imageUrl}">
+                <div class="info m-5">
+                    <h2>${item.name}</h2>
+                    <h5>Type: ${item.type}</h5>
+                    <h5>Age: ${item.age}</h5>
+                    <h5>Owner: ${item.owner}</h5>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
             </div>
             <div class="table-container">
@@ -39,7 +44,7 @@ const makeDino = (item, index) => {
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Date</th>
-                        <th scope="col">Type</th>
+                        <th scope="col">Adventure</th>
                     </tr>
                     </thead>
                     <tbody id="adventureInfo${index}"></tbody>
