@@ -61,21 +61,24 @@ const adventure = (index, item, array) => {
   $(`#adventure${index}`).click(() => {
     item.health -= 30;
 
-    item.adventures.push({ timeStamp: new Date(), adventure: randomAdventure(possibleAdventures).title});
+    item.adventures.push({
+      timeStamp: new Date(),
+      adventure: randomAdventure(possibleAdventures).title,
+    });
     printDinoCards(array);
   });
 };
 
 const adventureLog = (item, index) => {
-    item.adventures.forEach((adventure, i) => {
-        $(`#adventureInfo${index}`).append(`
+  item.adventures.forEach((adventure, i) => {
+    $(`#adventureInfo${index}`).append(`
         <tr>
             <td>${i + 1}</td>
             <td>${adventure.timeStamp}</td>
             <td>${adventure.adventure}</td>
         </tr>
-        `)
-    })
+        `);
+  });
 };
 
 export { adventure, adventureLog };

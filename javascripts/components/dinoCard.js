@@ -5,7 +5,7 @@ const makeDino = (item, index) => {
         <h5 class="card-title">${item.name}</h5>
         <p class="mb-0">Health Bar:</p>
         <div class="progress">
-            <div class="progress-bar" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated ${color(item)}" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <button class="btn btn-success m-1" id="feed${index}">Feed</button>
         <button class="btn btn-success m-1" id="pet${index}">Pet</button>
@@ -34,7 +34,7 @@ const makeDino = (item, index) => {
                     <h5>Age: ${item.age}</h5>
                     <h5>Owner: ${item.owner}</h5>
                     <div class="progress">
-                        <div class="progress-bar" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated ${color(item)}" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>
@@ -60,5 +60,17 @@ const makeDino = (item, index) => {
 
 `;
 };
+
+const color = (item) => {
+  if (item.health >= 50) {
+    return 'green';
+  } else if (item.health < 50 && item.health > 20) {
+    return 'yellow';
+  } else {
+    return 'red';
+  }
+};
+
+
 
 export { makeDino };
