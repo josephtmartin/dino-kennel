@@ -1,28 +1,37 @@
 body {
   background-color: #333333;
+  font-family: 'Londrina Solid', cursive;
 }
-.add-dino-button{
-    background-color: #878787;
-}
-.submit-new-dino {
+.add-dino-button {
   background-color: #878787;
-  color: white;
+  color: black;
+  font-family: 'Russo One', sans-serif;
 }
+.add-dino-button:hover {
+  background-color: #575757;
+}
+/* KENNEL */
 .kennel-container {
-  background-color: darkgreen;
+  background-image: url(https://i.pinimg.com/originals/43/bd/8a/43bd8aff13b6ca8c2484b8b7c10e40ae.jpg);
   margin: 10px;
 }
+/* HOSPITAL */
 .hospital-container {
-  background-color: red;
+  background-image: url(https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   margin: 10px;
 }
+/* GRAVEYARD */
 .graveyard-container {
-  background-color: grey;
+  background-image: url(https://i.pinimg.com/originals/a7/f3/da/a7f3da117da8c8f9a4006796829f5c49.jpg);
   margin: 10px;
 }
 h1 {
   display: flex;
   justify-content: center;
+}
+/* CARD STYLES */
+.card {
+  border: 3px solid dimgray;
 }
 .kennel-cards {
   display: flex;
@@ -39,6 +48,7 @@ h1 {
   justify-content: space-around;
   flex-flow: row wrap;
 }
+/* PROGRESS BAR STYLES */
 .green {
   background-color: green;
 }
@@ -48,6 +58,7 @@ h1 {
 .red {
   background-color: red;
 }
+/* TOOLTIPS */
 
 @media screen and (max-width: 426px) {
   .modal-body {

@@ -7,12 +7,14 @@ const makeDino = (item, index) => {
         <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated ${color(item)}" style="width: ${item.health}%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <button class="btn btn-success m-1" id="feed${index}">Feed</button>
-        <button class="btn btn-success m-1" id="pet${index}">Pet</button>
-        <button class="btn btn-warning m-1" style="color: white" id="adventure${index}">Adventure</button>
-        <div class="d-flex justify-content-center">
-            <button class="btn btn-info m-1" id="info${index}" data-toggle="modal" data-target="#modal${index}">Info</button>
-            <button class="btn btn-danger m-1" id="delete${index}">Delete</button>
+        <div class="button-container">
+            <button class="btn btn-outline-success m-1" id="feed${index}">Feed</button>
+            <button class="btn btn-outline-success m-1" id="pet${index}">Pet</button>
+            <button class="btn btn-outline-warning m-1" id="adventure${index}">Adventure</button>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-outline-info m-1" id="info${index}" data-toggle="modal" data-target="#modal${index}">Info</button>
+                <button class="btn btn-outline-danger m-1" id="delete${index}">Delete</button>
+            </div>
         </div>
     </div>
 </div>
