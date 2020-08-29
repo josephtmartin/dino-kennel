@@ -50,18 +50,18 @@ const submitDinoForm = () => {
       imageUrl: $('#inputImg').val(),
     };
     getDinos().push(newDino);
-    printDinoCards(getDinos())
+    printDinoCards(getDinos());
     emptyForm();
   });
 };
 
 const emptyForm = () => {
-    $('#addDino').html(`
+  $('#addDino').html(`
         <div id="addDino" class="add-dino">
             <button type="button" class="btn btn-secondary btn-lg btn-block" id="newDinoButton">Add New Dino</button>
         </div>
-    `)
-    dinoForm();
-}
+    `);
+  dinoForm();
+};
 
 export { dinoForm };

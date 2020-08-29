@@ -1,47 +1,56 @@
 body {
-    background-color: #fff6f4;
+  background-color: #fff6f4;
 }
 .kennel-container {
-    background-color: darkgreen;
-    margin: 10px;
+  background-color: darkgreen;
+  margin: 10px;
 }
 .hospital-container {
-    background-color: red;
-    margin: 10px;
+  background-color: red;
+  margin: 10px;
 }
 .graveyard-container {
-    background-color: grey;
-    margin: 10px;
+  background-color: grey;
+  margin: 10px;
 }
 h1 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .kennel-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 .hospital-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 .graveyard-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
 }
 
 @media screen and (max-width: 426px) {
-    .modal-body {
-        display: flex;
-        flex-flow: column;
-    }
-    .modal-image {
-        width: 200px;
-    }
-    .modal-body .info {
-        margin: 0;
-    }
+  .modal-body {
+    display: flex;
+    flex-flow: column;
+  }
+  .modal-image {
+    width: 200px;
+  }
+  .modal-body .info {
+    margin: 0;
+  }
 }
