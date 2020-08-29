@@ -1,5 +1,12 @@
 body {
-  background-color: #fff6f4;
+  background-color: #333333;
+}
+.add-dino-button{
+    background-color: #878787;
+}
+.submit-new-dino {
+  background-color: #878787;
+  color: white;
 }
 .kennel-container {
   background-color: darkgreen;
@@ -36,7 +43,7 @@ h1 {
   background-color: green;
 }
 .yellow {
-  background-color: yellow;
+  background-color: #ffcc00;
 }
 .red {
   background-color: red;
