@@ -12,17 +12,23 @@ body {
 }
 /* KENNEL */
 .kennel-container {
-  background-image: url(https://i.pinimg.com/originals/43/bd/8a/43bd8aff13b6ca8c2484b8b7c10e40ae.jpg);
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/819CwUGPoXL._AC_SL1280_.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 10px;
 }
 /* HOSPITAL */
 .hospital-container {
-  background-image: url(https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-image: url(https://themighty.com/wp-content/uploads/2017/07/ThinkstockPhotos-629431156-1280x640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 10px;
 }
 /* GRAVEYARD */
 .graveyard-container {
-  background-image: url(https://i.pinimg.com/originals/a7/f3/da/a7f3da117da8c8f9a4006796829f5c49.jpg);
+  background-image: url(https://www.jing.fm/clipimg/full/94-943261_cemetery-vector-graveyard-silhouette-graveyard-png.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 10px;
 }
 h1 {
