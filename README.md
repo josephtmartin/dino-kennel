@@ -17,6 +17,7 @@ This was to showcase and test our skills with what we have learned so far at NSS
 ### Build Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/17e25a5c-b190-4b44-b789-1073ae7f7140/deploy-status)](https://app.netlify.com/sites/dinokenneljm/deploys)
 
+
 ### Screenshots
 ![Dino Kennel](images/dino-kennel.png)
 ![Dino Modal](images/dino-modal.png)
@@ -27,3 +28,4 @@ This was to showcase and test our skills with what we have learned so far at NSS
 
 ### Site Link
 [Dino Kennel Site](https://dinokenneljm.netlify.app/)
+
